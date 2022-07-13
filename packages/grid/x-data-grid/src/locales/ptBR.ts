@@ -27,11 +27,17 @@ const ptBRGrid: Partial<GridLocaleText> = {
   toolbarFiltersTooltipActive: (count) =>
     `${count} ${count !== 1 ? 'filtros' : 'filtro'} ${count !== 1 ? 'ativos' : 'ativo'}`,
 
+  // Quick filter toolbar field
+  toolbarQuickFilterPlaceholder: 'Procurar...',
+  toolbarQuickFilterLabel: 'Procurar',
+  toolbarQuickFilterDeleteIconLabel: 'Limpar',
+
   // Export selector toolbar button text
   toolbarExport: 'Exportar',
   toolbarExportLabel: 'Exportar',
   toolbarExportCSV: 'Baixar como CSV',
-  toolbarExportPrint: 'Print',
+  toolbarExportPrint: 'Imprimir',
+  toolbarExportExcel: 'Baixar como Excel',
 
   // Columns panel text
   columnsPanelTextFieldLabel: 'Localizar coluna',
@@ -66,7 +72,7 @@ const ptBRGrid: Partial<GridLocaleText> = {
   filterOperatorOnOrBefore: 'em ou antes de',
   filterOperatorIsEmpty: 'está vazio',
   filterOperatorIsNotEmpty: 'não está vazio',
-  // filterOperatorIsAnyOf: 'is any of',
+  filterOperatorIsAnyOf: 'é qualquer um dos',
 
   // Filter values text
   filterValueAny: 'qualquer',
@@ -121,9 +127,9 @@ const ptBRGrid: Partial<GridLocaleText> = {
   unpin: 'Desafixar',
 
   // Tree Data
-  // treeDataGroupingHeaderName: 'Group',
-  // treeDataExpand: 'see children',
-  // treeDataCollapse: 'hide children',
+  treeDataGroupingHeaderName: 'Grupo',
+  treeDataExpand: 'mostrar filhos',
+  treeDataCollapse: 'esconder filhos',
 
   // Grouping columns
   groupingColumnHeaderName: 'Grupo',
@@ -131,8 +137,12 @@ const ptBRGrid: Partial<GridLocaleText> = {
   unGroupColumn: (name) => `Parar agrupamento por ${name}`,
 
   // Master/detail
+  detailPanelToggle: 'Painel de detalhes',
   expandDetailPanel: 'Expandir',
   collapseDetailPanel: 'Esconder',
+
+  // Row reordering text
+  rowReorderingHeaderName: 'Reorganizar linhas',
 };
 
 export const ptBR: Localization = getGridLocalization(ptBRGrid, ptBRCore);

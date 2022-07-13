@@ -36,11 +36,17 @@ const csCZGrid: Partial<GridLocaleText> = {
     return `${count} ${pluralForm}`;
   },
 
+  // Quick filter toolbar field
+  // toolbarQuickFilterPlaceholder: 'Search...',
+  // toolbarQuickFilterLabel: 'Search',
+  // toolbarQuickFilterDeleteIconLabel: 'Clear',
+
   // Export selector toolbar button text
   toolbarExport: 'Export',
   toolbarExportLabel: 'Export',
   toolbarExportCSV: 'Stáhnout jako CSV',
   toolbarExportPrint: 'Vytisknout',
+  // toolbarExportExcel: 'Download as Excel',
 
   // Columns panel text
   columnsPanelTextFieldLabel: 'Najít sloupec',
@@ -163,8 +169,12 @@ const csCZGrid: Partial<GridLocaleText> = {
   unGroupColumn: (name) => `Přestat zoskupovat podle ${name}`,
 
   // Master/detail
+  // detailPanelToggle: 'Detail panel toggle',
   // expandDetailPanel: 'Expand',
   // collapseDetailPanel: 'Collapse',
+
+  // Row reordering text
+  // rowReorderingHeaderName: 'Row reordering',
 };
 
 export const csCZ: Localization = getGridLocalization(csCZGrid, csCZCore);
